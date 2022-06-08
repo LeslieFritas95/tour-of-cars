@@ -1,1 +1,7 @@
-<p>car-list works!</p>
+<app-car-detail [car]="selectedCar"></app-car-detail>
+
+<div class="car-list-item" *ngFor="let car of carsArray" [class.selected]="selectedCar === car">
+  <span>modello: {{car.model}}</span>
+  <span>produttore: {{car.producer}}</span>
+  <button (click)="openDetail(car)">apri dettaglio</button>
+</div>
