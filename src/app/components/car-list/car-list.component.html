@@ -1,7 +1,5 @@
-<app-car-detail [car]="selectedCar"></app-car-detail>
-
-<div class="car-list-item" *ngFor="let car of carsArray" [class.selected]="selectedCar === car">
+<div class="car-list-item" *ngFor="let car of carsArray">
   <span>modello: {{car.model}}</span>
   <span>produttore: {{car.producer}}</span>
-  <button (click)="openDetail(car)">apri dettaglio</button>
+  <a routerLink="/detail/{{car.id}}">apri dettaglio</a>
 </div>

@@ -2,7 +2,7 @@ import { Car } from "./car";
 
 export const CARS: Car[] = [
   {
-    id: '1',
+    id: 1,
     model: 'panda',
     producer: 'fiat',
     maxSpeed: 140,
@@ -10,7 +10,7 @@ export const CARS: Car[] = [
     isAvailable: true
   },
   {
-    id: '2',
+    id: 2,
     model: 'golf',
     producer: 'volkswagen',
     maxSpeed: 180,
@@ -18,7 +18,7 @@ export const CARS: Car[] = [
     isAvailable: true
   },
   {
-    id: '3',
+    id: 3,
     model: 'twingo',
     producer: 'renault',
     maxSpeed: 120,
@@ -26,7 +26,7 @@ export const CARS: Car[] = [
     isAvailable: true
   },
   {
-    id: '4',
+    id: 4,
     model: 'corvette',
     producer: 'chevrolet',
     maxSpeed: 220,
@@ -34,7 +34,7 @@ export const CARS: Car[] = [
     isAvailable: false
   },
   {
-    id: '5',
+    id: 5,
     model: 'r8',
     producer: 'audi',
     maxSpeed: 210,
@@ -42,7 +42,7 @@ export const CARS: Car[] = [
     isAvailable: true
   },
   {
-    id: '6',
+    id: 6,
     model: 'punto',
     producer: 'fiat',
     maxSpeed: 150,
@@ -50,7 +50,7 @@ export const CARS: Car[] = [
     isAvailable: false
   },
   {
-    id: '7',
+    id: 7,
     model: 'matiz',
     producer: 'daewoo',
     maxSpeed: 130,

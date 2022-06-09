@@ -10,19 +10,19 @@ import { CarApiService } from './services/car-api.service';
 export class CarListComponent implements OnInit {
 
   carsArray: Car[] = [];
-  selectedCar?: Car;
 
   constructor(private carService: CarApiService) { }
 
   ngOnInit(): void {
+    this.getCars()
+  }
+
+  getCars(): void{
     this.carService.getCars().subscribe({
       next: cars => this.carsArray = cars,
-      error: err => console.log('aiuto!!!!')
+      error: err => console.log(err),
     })
   }
 
-  openDetail(car: Car){
-    this.selectedCar = car;
-  }
 
 }
